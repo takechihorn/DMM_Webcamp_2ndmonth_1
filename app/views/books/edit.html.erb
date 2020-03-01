@@ -1,0 +1,7 @@
+<h1>Editing Book</h1>
+<%# formが二つあるとupdateが無効化される%>
+<%= render 'form', book: @book %>
+
+
+<%= link_to 'Show', @book, class: "show_#{@book.id}" %> |
+<%= link_to 'Back', books_path, class: "back" %>
